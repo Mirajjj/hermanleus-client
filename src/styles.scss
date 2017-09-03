@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+$background: #A1AAB1;
+$font-color: white;
+
+body {
+  background: $background;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Sans Pro';
+}
+
+#home-page {
+  .heading {
+    top: 40px;
+    position: absolute;
+    left: 10%;
+    color: $font-color;
+
+    h1 {
+      font-size: 70px;;
+      font-weight: 300;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 40px;
+      font-weight: 700;
+      margin-left: 320px;
+    }
+  }
+
+  .social {
+    top: 80px;
+    position: absolute;
+    right: 10%;
+    color: $font-color;
+    font-size: 20px;
+    
+    a {
+      color: $font-color;
+    }
+
+    .list > .item {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -19,8 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "./vendor/semantic-ui/semantic.css"
+        "./vendor/semantic-ui/semantic.css",
+        "styles.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.js",
@@ -60,7 +60,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
