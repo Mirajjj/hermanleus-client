@@ -514,8 +514,9 @@ window.brain = function (canvas, filesFolderPath){
                     group,
                     offsetY = 7;
 
-                text.fontFamily = 'NeueHelveticaBold';
+                text.fontFamily = 'Source Sans Pro';
                 text.content = 'DREAMER';
+                text.fontWeight = '700';
                 text.fontSize = '25px';
                 text.fillColor = '#fff';
                 text.position.x -= text.bounds.width / 2;

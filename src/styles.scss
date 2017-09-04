@@ -6,7 +6,6 @@ $background: #A1AAB1;
 $font-color: white;
 
 body {
-  background: $background;
 }
 
 h1, h2, h3, h4, h5 {
@@ -14,6 +13,12 @@ h1, h2, h3, h4, h5 {
 }
 
 #home-page {
+  // background: $background;
+  background: url('./assets/space.jpg') 10% 0%;
+  background-size: cover;
+  max-height: 100%;
+  overflow: hidden;
+  
   .heading {
     top: 40px;
     position: absolute;
@@ -47,5 +52,11 @@ h1, h2, h3, h4, h5 {
     .list > .item {
       margin-bottom: 15px;
     }
+  }
+
+  .parallax {
+    z-index: -1;
+    position: absolute;
+    top: 0;
   }
 }
