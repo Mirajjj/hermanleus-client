@@ -14,10 +14,12 @@ h1, h2, h3, h4, h5 {
 
 #home-page {
   // background: $background;
-  background: url('./assets/space.jpg') 10% 0%;
-  background-size: cover;
-  max-height: 100%;
-  overflow: hidden;
+  //background: url('./assets/space.jpg') 10% 0%;
+  .landing {
+    background-size: cover;
+    max-height: 100%;
+    overflow: hidden;
+  }
   
   .heading {
     top: 40px;
@@ -39,7 +41,9 @@ h1, h2, h3, h4, h5 {
   }
 
   .social {
-    top: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 60px 40px 20px 40px;
+    top: 0px;
     position: absolute;
     right: 10%;
     color: $font-color;
@@ -55,8 +59,44 @@ h1, h2, h3, h4, h5 {
   }
 
   .parallax {
-    z-index: -1;
     position: absolute;
+    max-height:100%;
     top: 0;
+    z-index: -1;
+    overflow: hidden;
+    
+    .light {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    
+      &.dark {
+        background: rgba(0,0,0, 0.7);
+        -webkit-transition: background 1s; /* Safari */
+        transition: background 1s;
+      }
+
+      &.bright {
+        background: none;
+        -webkit-transition: background 1s; /* Safari */
+        transition: background 1s;
+      }
+    }
+  }
+
+
+  .services {
+    position: absolute;
+    margin-top: -285px;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 40px 20px 40px;
+    color: $font-color;
+    font-size: 20px;
+    left: 10%;
+
+    .list > .item {
+      margin-bottom: 15px;
+    }
   }
 }

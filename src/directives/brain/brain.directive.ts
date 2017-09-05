@@ -20,7 +20,18 @@ export class BrainDirective {
 
     $(window).resize(resize);
 
-    new window.brain(canvas, './assets/brainAssets')
+    const events = {
+      onHover: function () {
+        $('.parallax .light').removeClass('bright')
+        $('.parallax .light').addClass('dark')
+      },
+      onHoverOut: function () {
+        $('.parallax .light').removeClass('dark')
+         $('.parallax .light').addClass('bright')
+      }
+    }
+
+    new window.brain(canvas, './assets/brainAssets', events)
   }
 
 }

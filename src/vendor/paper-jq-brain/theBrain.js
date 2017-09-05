@@ -4,7 +4,7 @@
  * Paper.js
  */
 
-window.brain = function (canvas, filesFolderPath){
+window.brain = function (canvas, filesFolderPath, events){
             var self = this,
                 _loadedItems = [],
                 _mainCenterItem,
@@ -72,6 +72,10 @@ window.brain = function (canvas, filesFolderPath){
                             internal.setCursor.pointer();
                         }
 
+                        if(events && events.onHover && didOnce) {
+                            events.onHover();
+                        }
+
                         didOnce = false;
                     } else if (!didOnce) {
                         staticStateFunc();
@@ -83,6 +87,9 @@ window.brain = function (canvas, filesFolderPath){
                             internal.setCursor.normal();
                         }
 
+                        if(events && events.onHoverOut) {
+                            events.onHoverOut();
+                        }
 
                         didOnce = true;
                     }
@@ -515,7 +522,7 @@ window.brain = function (canvas, filesFolderPath){
                     offsetY = 7;
 
                 text.fontFamily = 'Source Sans Pro';
-                text.content = 'DREAMER';
+                text.content = 'Hire me';
                 text.fontWeight = '700';
                 text.fontSize = '25px';
                 text.fillColor = '#fff';

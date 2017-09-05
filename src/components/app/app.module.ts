@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrainDirective } from '../../directives/brain/brain.directive';
+import { SpaceWalkDirective } from '../../directives/space-walk/space-walk.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BrainDirective
+    BrainDirective,
+    SpaceWalkDirective
   ],
   imports: [
     BrowserModule
