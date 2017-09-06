@@ -4,12 +4,24 @@
 
 $background: #A1AAB1;
 $font-color: white;
+$sans-pro: 'Source Sans Pro';
 
 body {
+  font-family: $sans-pro;
 }
 
 h1, h2, h3, h4, h5 {
+  letter-spacing: 2px;
   font-family: 'Source Sans Pro';
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 21px;
 }
 
 #home-page {
@@ -19,24 +31,25 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
     max-height: 100%;
     overflow: hidden;
-  }
-  
-  .heading {
-    top: 40px;
-    position: absolute;
-    left: 10%;
-    color: $font-color;
+    margin-bottom: 0;
 
-    h1 {
-      font-size: 70px;;
-      font-weight: 300;
-    }
+    .heading {
+      top: 40px;
+      position: absolute;
+      left: 10%;
+      color: $font-color;
 
-    h2 {
-      margin-top: 10px;
-      font-size: 40px;
-      font-weight: 700;
-      margin-left: 320px;
+      h1 {
+        font-size: 70px;
+        font-weight: 300;
+      }
+
+      h2 {
+        margin-top: 10px;
+        font-size: 40px;
+        font-weight: 700;
+        margin-left: 320px;
+      }
     }
   }
 
@@ -47,7 +60,7 @@ h1, h2, h3, h4, h5 {
     position: absolute;
     right: 10%;
     color: $font-color;
-    font-size: 20px;
+    font-size: 16px;
     
     a {
       color: $font-color;
@@ -83,20 +96,30 @@ h1, h2, h3, h4, h5 {
       }
     }
   }
+  
+  .quote {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgb(242, 152, 55);
+    margin-top: -5px;
+    padding: 10px;
+    margin-bottom: 60px;
 
+    span {
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+  }
 
-  .services {
-    position: absolute;
-    margin-top: -285px;
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 40px 40px 20px 40px;
-    color: $font-color;
-    font-size: 20px;
-    left: 10%;
+  .projects {
+    .icon.trophy {
+      color: #ffe900;
+    }
 
-    .list > .item {
-      margin-bottom: 15px;
+    img {
+      width: 100%;
+      max-height: 350px;
     }
   }
 }
